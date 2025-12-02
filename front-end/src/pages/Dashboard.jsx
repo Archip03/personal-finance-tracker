@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import IncomeSummaryCard from "../components/IncomeSummaryCard";
 import { useEffect, useState } from "react";
 import { getExpenses, addExpense } from "../services/api";
 import ExpenseForm from "../components/ExpenseForm";
@@ -94,7 +95,7 @@ function Dashboard() {
     fetchExpenses();
   };
 
-  return (
+    return (
     <div className="dashboard">
       <div className="main-content">
         <header>
@@ -102,7 +103,12 @@ function Dashboard() {
             Personal Finance Tracker
           </h1>
         </header>
+
+        {/* ✅ NEW: Monthly Income Summary */}
+        <IncomeSummaryCard />
+
         <ExpenseForm onAddExpense={handleAddExpense} />
+
         <div className="my-4">
           <h2>Filter</h2>
           <label className="block mb-2">
@@ -130,18 +136,22 @@ function Dashboard() {
             Filter
           </button>
         </div>
+
         {error && <div className="text-red-500">{error}</div>}
+
         <ExpenseList
           expenses={filteredExpenses}
           onExpenseUpdated={fetchExpenses}
           onExpenseDeleted={fetchExpenses}
         />
       </div>
+
       <div className="chart-container">
         <ExpenseChart expenses={filteredExpenses} />
       </div>
     </div>
   );
+
 }
 
 export default Dashboard;
