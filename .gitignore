@@ -1,0 +1,15 @@
+# backend
+back-end/target/
+back-end/.idea/
+back-end/.classpath
+back-end/.project
+back-end/.settings/
+
+# frontend
+front-end/node_modules/
+front-end/dist/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
