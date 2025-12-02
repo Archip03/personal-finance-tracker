@@ -32,7 +32,8 @@ The Personal Finance Tracker is a web application designed to help users manage 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/personal-finance-tracker.git
+   git clone https://github.com/Archip03/personal-finance-tracker.git
+
    ```
 
 2. Navigate to the frontend directory:
@@ -90,14 +91,11 @@ Contributions are welcome! To contribute to this project:
 3. Commit your changes and push them to your fork.
 4. Open a pull request against the main repository.
 
-## License
+## My Custom Enhancements
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+- Improved documentation and setup
+- (Upcoming) Income tracking module
+- (Upcoming) Monthly financial summary
 
-## Contact
 
-For any questions or feedback, please reach out to [your-email@example.com](mailto:your-email@example.com).
 
-```
-
-Feel free to modify the contact information and any other details to fit your specific needs. Let me know if you need any more adjustments!
